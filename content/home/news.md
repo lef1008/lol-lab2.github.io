@@ -7,16 +7,16 @@ widget: pages
 headless: true
 
 # Order that this section appears on the page.
-weight: 90
+weight: 60
 
-title: Recent Publications
-subtitle: ''
+title: In the News
+subtitle:
 
 content:
   # Filter on criteria
   filters:
     folders:
-      - publication
+      - news
     tag: ''
     category: ''
     publication_type: ''
@@ -25,17 +25,14 @@ content:
     exclude_future: false
     exclude_past: false
   # Choose how many pages you would like to display (0 = all pages)
-  count: 5
+  count: 0
   # Choose how many pages you would like to offset by
   offset: 0
   # Page order: descending (desc) or ascending (asc) date.
   order: desc
+
 design:
   # Choose a view for the listings:
-  view: citation
+  view: compact
   columns: '2'
 ---
-
-{{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
-{{% /callout %}}
